@@ -12,15 +12,20 @@ Validates Azure Managed Redis (AMR) OSS Cluster Policy behaviour with StackExcha
 
 ## Run it
 
-**1. Fill in your connection string** in `AmrClusterTest/Program.cs`:
+**1. Clone the repo**
+```bash
+git clone https://github.com/Redislabs-Solution-Architects/amr-oss-cluster-validator.git
+cd amr-oss-cluster-validator
+```
+
+**2. Fill in your connection string** in `Program.cs`:
 ```csharp
 const string OSS_CONN = "YOUR_HOST:10000,password=YOUR_KEY,ssl=True,abortConnect=False,connectTimeout=5000,responseTimeout=5000";
 ```
 Get hostname and key from: **Portal → your AMR instance → Settings → Authentication**
 
-**2. Run:**
+**3. Run:**
 ```bash
-cd AmrClusterTest
 dotnet run
 ```
 
