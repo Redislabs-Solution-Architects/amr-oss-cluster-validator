@@ -3,7 +3,7 @@
 Validates Azure Managed Redis (AMR) OSS Cluster Policy behaviour with StackExchange.Redis (.NET).
 
 **What it tests:**
-- T1 · Shard discovery — what IPs SE.Redis actually connects to (the Calico question)
+- T1 · Shard discovery — what IPs SE.Redis actually connects to 
 - T2 · Cross-slot behaviour — MGET/transactions with and without hash tags
 - T3 · CLUSTER INFO — topology, shard count, slot assignments
 - T4 · MOVED/ASK — how SE.Redis handles cluster redirects transparently
